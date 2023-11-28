@@ -1,0 +1,34 @@
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Rubik','Raleway',sans-serif;
+}
+
+main{
+  flex-grow: 1;
+}
+
+.containerReloj{
+  background: #002A40;
+  width: 100%;
+  height: 25rem;
+}
+
+.containerFecha,
+.containerHora{
+  width: 100%;
+  height: 200px;
+  background: #00161F;
+}
+
+@media all and (min-width: 768px){
+  .containerReloj{
+    height: 35rem;
+  }
+
+  .containerFecha,
+  .containerHora{
+    width: 90%;
+  }
+}
