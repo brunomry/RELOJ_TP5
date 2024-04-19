@@ -7,54 +7,115 @@ body{
 }
 
 main{
-  flex-grow: 1;
+  flex-grow: 1; 
 }
 
-.containerReloj{
-  background: #002A40;
-  width: 100%;
-  height: 25rem;
+.containerConteo{
+  width: 15rem;
+  height: 15rem;
+  border: 15px solid red;
 }
 
-.containerFecha,
-.containerHora{
+.containerTemporizador{
   width: 100%;
-  height: 200px;
-  background: #00161F;
+  min-width: 6.25rem;
+}
+
+.bgSelect{
+  background-color: #0E1729;
+  color: #fff;
+}
+
+.containerButtons{
+  width: 100%;
+}
+
+.containerButtons .btnIniciar{
+  width: 99%;
+  background-color: #3ab9f0;
+  padding: 10px 0px;
+}
+
+.containerButtons .btnIniciar:hover{
+  background-color: #2FA4D8;
+}
+
+.containerButtons .btnPausar{
+  width: 45%;
+  background-color: #f8c453;
+  padding: 10px 0px;
+}
+
+.containerButtons .btnPausar:hover{
+  background-color: #D4A644;
+}
+
+.containerButtons .btnContinuar{
+  width: 45%;
+  background-color: #2ccab8;
+  padding: 10px 0px;
+}
+
+.containerButtons .btnContinuar:hover{
+  background-color: #26B8A6;
+}
+
+.containerButtons .btnRestablecer{
+  width: 45%;
+  background-color: #e65168;
+  padding: 10px 0px;
+}
+
+.containerButtons .btnRestablecer:hover{
+  background-color: #cf475c;
 }
 
 footer{
-  border: 1px solid ;
+  border-top: .1px solid #525151;
 }
 
 /*sobre mi*/
 .imageProfile{
   width: 425px;
   height: 425px;
+  transition: .7s;
 }
 
 .imageProfile:hover{
   width: 500px;
   height: 500px;
-  transition: .3s ease-in-out;
+  transition: .7s;
 }
 
-a .socialIcon{
+a .github{
   font-size: 40px;
+  color: #acadb3;
+  transition: 1s;
 }
 
-a .socialIcon:hover{
-  font-size: 50px;
-  transition: .3s ease-in-out;
+a .linkedIn{
+  font-size: 40px;
+  transition: 1s;
 }
 
-@media all and (min-width: 768px){
-  .containerReloj{
-    height: 35rem;
+a:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+@media all and (min-width:576px){
+  .containerConteo{
+    width: 25rem;
+    height: 25rem;
   }
 
-  .containerFecha,
-  .containerHora{
-    width: 90%;
+  .containerTemporizador{
+    width: 75%;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerTemporizador{
+    width: 60%;
   }
 }
